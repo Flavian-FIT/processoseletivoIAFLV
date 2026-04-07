@@ -1,11 +1,13 @@
 # Processo Seletivo – Intensivo Maker | AI
 
+AAAA
+
 Bem-vindo(a) à **etapa prática do processo seletivo para o Intensivo Maker**.
 
 Esta atividade tem como objetivo avaliar competências técnicas relacionadas a **Machine Learning**, **Visão Computacional** e **Otimização de modelos para sistemas embarcados (Edge AI)**, a partir da aplicação prática dos conhecimentos adquiridos nos cursos EAD da etapa anterior.
 
 > 🎯 **Importante**  
-> O foco deste desafio é avaliar sua capacidade de **projetar, treinar e otimizar um modelo de IA**.  
+> O foco deste desafio é avaliar sua capacidade de **projetar, treinar e otimizar um modelo de IA**.
 
 ---
 
@@ -28,15 +30,13 @@ Esta atividade tem como objetivo avaliar competências técnicas relacionadas a 
 Caso você **nunca tenha utilizado Git ou GitHub**, não se preocupe.  
 Siga atentamente as etapas abaixo.
 
-
 ### 1️⃣ Criação de Conta no GitHub
 
-1. Acesse: https://github.com  
-2. Clique em **Sign up**  
-3. Crie sua conta gratuita seguindo as instruções da plataforma  
+1. Acesse: <https://github.com>
+2. Clique em **Sign up**
+3. Crie sua conta gratuita seguindo as instruções da plataforma
 
-(*O GitHub será utilizado para envio, versionamento e correção automática do seu projeto.*)
-
+(_O GitHub será utilizado para envio, versionamento e correção automática do seu projeto._)
 
 ### 2️⃣ Instalação do Git
 
@@ -44,10 +44,11 @@ O **Git** é a ferramenta que permite versionar e enviar seu código para o GitH
 
 - **Windows**  
   Baixe e instale o **Git Bash**:  
-  https://git-scm.com/downloads
+  <https://git-scm.com/downloads>
 
 - **Linux / macOS**  
   Verifique se o Git já está instalado:
+
   ```bash
   git --version
   ```
@@ -62,11 +63,9 @@ Para desenvolver o desafio, você deverá criar uma cópia deste repositório.
 
 <img width="219" height="45" alt="image" src="https://github.com/user-attachments/assets/5d629626-513a-445c-ba0f-e5bb3e225187" />
 
-1. No canto superior direito desta página, clique em **Fork**  
+1. No canto superior direito desta página, clique em **Fork**
 2. Uma cópia deste repositório será criada no **seu perfil do GitHub**
-(*O Fork permite que você trabalhe de forma independente sem alterar o repositório original.*)
-
-
+   (_O Fork permite que você trabalhe de forma independente sem alterar o repositório original._)
 
 ### 2️⃣ Clone do Repositório
 
@@ -78,18 +77,17 @@ No repositório do **seu Fork**, clique em **<> Code**, copie a URL e execute:
 git clone https://github.com/SEU_USUARIO/nome-do-repositorio.git
 cd nome-do-repositorio
 ```
-(*O comando `git clone` cria uma cópia do repositório.*)
 
-
+(_O comando `git clone` cria uma cópia do repositório._)
 
 ### 3️⃣ Preparação do Ambiente de Execução
 
 Você pode executar o projeto de **duas formas**.
 
+#### Opção A – Ambiente Python Local
 
-
-#### Opção A – Ambiente Python Local 
 Requisitos:
+
 - Python **3.10 ou 3.11**
 - pip
 
@@ -99,25 +97,26 @@ Instale as dependências com:
 pip install -r requirements.txt
 ```
 
+#### Opção B – Dev Container
 
-
-#### Opção B – Dev Container 
 Este repositório inclui um **Dev Container** para facilitar a criação de um ambiente Python padronizado.
 
 **Requisitos**
+
 - VS Code
 - Docker instalado
 - Extensão **Dev Containers**
 
 **Passos**
-1. Abra o repositório no VS Code  
-2. Selecione **“Reopen in Container”**  
-3. Aguarde a criação automática do ambiente  
+
+1. Abra o repositório no VS Code
+2. Selecione **“Reopen in Container”**
+3. Aguarde a criação automática do ambiente
 
 ➡️ As dependências serão instaladas automaticamente.
 
-
 #### Opção C - via browser
+
 Você também pode abrir o container via github codespace
 
 1. Clique em **<> Code**
@@ -126,9 +125,7 @@ Você também pode abrir o container via github codespace
 
 <img width="482" height="436" alt="image" src="https://github.com/user-attachments/assets/37a1e99d-66d2-4730-b824-26f834bd8cc3" />
 
-
->  Será aberto uma instância do VS Code no seu navegador com o container configurado
-
+> Será aberto uma instância do VS Code no seu navegador com o container configurado
 
 ---
 
@@ -140,8 +137,6 @@ O foco não é apenas obter alta acurácia, mas também **compreender o fluxo co
 
 **treinamento → salvamento → conversão → otimização**
 
-
-
 ### 🎯 Conjunto de Dados
 
 Será utilizado o dataset **MNIST**, composto por imagens de dígitos manuscritos de **0 a 9**.
@@ -149,13 +144,11 @@ Será utilizado o dataset **MNIST**, composto por imagens de dígitos manuscrito
 
 ✔️ O dataset já está disponível na biblioteca **TensorFlow/Keras**, não sendo necessário download manual.
 
-📌 *O MNIST é amplamente utilizado para introdução à Visão Computacional e Redes Neurais.*
+📌 _O MNIST é amplamente utilizado para introdução à Visão Computacional e Redes Neurais._
 
+### ✅ Requisitos Obrigatórios
 
-
-###  ✅ Requisitos Obrigatórios
-
-**Etapa 1:**  Treinamento do Modelo (`train_model.py`)
+**Etapa 1:** Treinamento do Modelo (`train_model.py`)
 
 Implemente no arquivo `train_model.py` um código que realize:
 
@@ -166,9 +159,7 @@ Implemente no arquivo `train_model.py` um código que realize:
 - Exibição da **acurácia final** no terminal
 - Salvamento do modelo treinado no formato **Keras** (`.h5`)
 
-(*O modelo salvo será utilizado na etapa de otimização.*)
-
-
+(_O modelo salvo será utilizado na etapa de otimização._)
 
 **Etapa 2:** Otimização do Modelo (`optimize_model.py`)
 
@@ -180,8 +171,6 @@ No arquivo `optimize_model.py`, implemente:
   - **Dynamic Range Quantization**
 
 (**Objetivo:** reduzir o tamanho do modelo, mantendo desempenho adequado para aplicações de **Edge AI**.)
-
-
 
 ### 📂 Estrutura do Projeto
 
@@ -202,8 +191,6 @@ seu-repositorio/
 ├── model.tflite              # ⚡ Modelo otimizado (gerado)
 └── README.md                 # 📝 Relatório final do candidato
 ```
-
-
 
 ### ⚠️ Restrições e Considerações de Engenharia
 
@@ -233,8 +220,6 @@ No entanto, é importante respeitar as diretrizes abaixo.
 > **engenharia eficiente**, compatível com ambientes automatizados e
 > restrições típicas de aplicações reais de Edge AI.
 
-
-
 ### 📚 Material de Apoio
 
 Os cursos realizados na etapa anterior **devem ser utilizados como referência**.
@@ -243,9 +228,7 @@ Os cursos realizados na etapa anterior **devem ser utilizados como referência**
 - 👁️ **Sistemas de Visão Computacional Embarcada**
 - ⚙️ **Otimização de Modelos em Sistemas Embarcados**
 
-(*Os exemplos apresentados nesses cursos podem ser adaptados e reutilizados neste desafio.*)
-
-
+(_Os exemplos apresentados nesses cursos podem ser adaptados e reutilizados neste desafio._)
 
 ### ⚖️ Critérios de Avaliação
 
@@ -264,13 +247,12 @@ A avaliação considerará:
 
 ## 📤 Passo 3: Instruções de Entrega
 
-### ✔️ Validação 
+### ✔️ Validação
 
 Antes do envio, execute os scripts e confirme a geração dos arquivos:
+
 - `model.h5`
 - `model.tflite`
-
-
 
 ### ⬆️ Envio do Código
 
@@ -280,17 +262,13 @@ git commit -m "Entrega do desafio técnico - Seu Nome"
 git push origin main
 ```
 
-
-
 ### 🔍 Verificação Automática
 
-1. Acesse a aba **Actions** no GitHub  
-2. Verifique se o workflow foi executado com sucesso (✅)  
+1. Acesse a aba **Actions** no GitHub
+2. Verifique se o workflow foi executado com sucesso (✅)
 3. Em caso de erro (❌), consulte os logs, corrija e envie novamente
 
 <img width="807" height="363" alt="image" src="https://github.com/user-attachments/assets/d991d35b-2bc2-48f7-9ac7-cf5ca9dc452a" />
-
-
 
 ### 📎 Submissão Final
 
@@ -307,44 +285,34 @@ Preencha todas as seções de forma clara e objetiva.
 > 💡 Dica: não é necessário um relatório extenso.  
 > O mais importante é demonstrar **clareza nas decisões técnicas**.
 
-
-
 **Exemplo:**
 
 👤 Identificação: **Nome Completo:**
-
 
 ### 1️⃣ Resumo da Arquitetura do Modelo
 
 Descreva, em palavras, a arquitetura da **CNN** implementada no arquivo
 `train_model.py`.
 
-
-
 ### 2️⃣ Bibliotecas Utilizadas
 
 Liste as principais bibliotecas utilizadas no projeto, preferencialmente
 com suas versões.
-
-
 
 ### 3️⃣ Técnica de Otimização do Modelo
 
 Explique qual técnica foi utilizada para otimizar o modelo no arquivo
 `optimize_model.py`.
 
-
-
 ### 4️⃣ Resultados Obtidos
 
 Informe o principal resultado obtido após o treinamento do modelo.
 
-
-
 ### 5️⃣ Comentários Adicionais (Opcional)
 
 Utilize este espaço para comentar:
-- Dificuldades encontradas  
-- Decisões técnicas importantes  
-- Limitações do modelo  
+
+- Dificuldades encontradas
+- Decisões técnicas importantes
+- Limitações do modelo
 - Aprendizados durante o desafio
